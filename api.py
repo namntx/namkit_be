@@ -84,7 +84,7 @@ def get_download_link():
     data = request.json
     print(data)
     file = download.get_file(data["url"], data["type"])
-    return {"url": "http://127.0.0.1:8080/serve_file/" + file}
+    return {"url": "https://namkit-8c9bfd4e30aa.herokuapp.com/serve_file/" + file}
 
 
 @app.route("/serve_file/<file>")
