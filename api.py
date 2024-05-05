@@ -93,5 +93,7 @@ def serve_file(file):
     download_file = path + "/files/" + file
     return send_file(download_file, as_attachment=True)
 
+port = int(os.environ.get("PORT", 5000))
+
 if __name__ == "__main__":
-    app.run(threaded=True, debug=True)
+    app.run(host="0.0.0.0", port=port)
