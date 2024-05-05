@@ -94,4 +94,4 @@ def serve_file(file):
     return send_file(download_file, as_attachment=True)
 
 if __name__ == "__main__":
-    app.run(threaded=True, debug=True, port=5000)
+    app.run(threaded=True, debug=True)
